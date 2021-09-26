@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap" rel="stylesheet">
+    <title>I-Library</title>
+</head>
+
+<body>
+    <header>
+        <!--Agrego algunos titulos para el comienzo me mi sitio-->
+        <h5><a href="#">i-Library</a></h5>
+        <!--BOTON DEL DARKMODE-->
+        <div class="form-check form-switch" id="swtch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        </div>
+        <h1>Bienvenidos</h1>
+        <h3>Comprar nunca fue tan facil</h3>
+
+    </header>
+
+    <main>
+        <!--voy a agregar algunos articulos:-->
+        <div class="articulos">
+            <span><svg viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M3,7V5H5V4C5,2.89 5.9,2 7,2H13V9L15.5,7.5L18,9V2H19C20.05,2 21,2.95 21,4V20C21,21.05 20.05,22 19,22H7C5.95,22 5,21.05 5,20V19H3V17H5V13H3V11H5V7H3M7,11H5V13H7V11M7,7V5H5V7H7M7,19V17H5V19H7Z" />
+                </svg></span>
+            <span><svg viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M18.62,1.5C18.11,1.5 17.6,1.69 17.21,2.09L10.75,8.55L14.95,12.74L21.41,6.29C22.2,5.5 22.2,4.24 21.41,3.46L20.04,2.09C19.65,1.69 19.14,1.5 18.62,1.5M9.8,9.5L3.23,16.07L3.93,16.77C3.4,17.24 2.89,17.78 2.38,18.29C1.6,19.08 1.6,20.34 2.38,21.12C3.16,21.9 4.42,21.9 5.21,21.12C5.72,20.63 6.25,20.08 6.73,19.58L7.43,20.27L14,13.7" />
+                </svg></span>
+            <span><svg viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" />
+                </svg></span>
+            <span><svg viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M9.05,9H7.06V6H9.05V4.03H7.06V3.03C7.06,1.92 7.95,1.04 9.05,1.04H15.03V8L17.5,6.5L20,8V1.04H21C22.05,1.04 23,2 23,3.03V17C23,18.03 22.05,19 21,19H9.05C8,19 7.06,18.05 7.06,17V16H9.05V14H7.06V11H9.05V9M1,18H3V15H1V13H3V10H1V8H3V5H5V8H3V10H5V13H3V15H5V18H3V20H5V21H21V23H5A2,2 0 0,1 3,21V20H1V18Z" />
+                </svg></span>
+        </div>
+
+        <h2>¿Que estas buscando?</h2>
+
+        <!--ahora agrego mi menu de opciones:-->
+        <nav>
+            <ul>
+                <li><a href="#card">Cuadernos</a></li>
+                <li><a href="#card1">Lapiceras</a></li>
+                <li><a href="#card1">Lapices</a></li>
+                <li><a href="#card">Cuadernillos</a></li>
+            </ul>
+        </nav>
+
+        <div id="apartado">
+            <h3>CUADERNOS Y CUADERNILLOS</h3>
+            <!--BOTON DEL CARRITO-->
+            <button id="pedido" class="btn-primary btn-lg">CARRITO📘</button>
+        </div>
+
+        <!--CUADERNOS y CUADERNILLOS-->
+        <template id="template-card">
+            <div class="col-4 mb-2 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4>MARCA</h4>
+                        <img src="" alt="" class="card-img-top">
+                        <p>HOJAS:</p>
+                        <select name="" id="hs">
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                            <option value="150">150</option>
+                            <option value="200">200</option>
+                        </select>
+
+                        <p>TIPO:</p>
+                        <select name="" id="tip">
+                            <option value="cuadriculado">cuadriculado</option>
+                            <option value="rayado">rayado</option>
+                        </select>
+                        <h6>precio</h6>
+
+                        <button class="btn btn-dark">AGREGAR</button>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+
+
+
+
+
+        <!--este template es para la forma del footer de la tabla-->
+
+        <template id="template-footer">
+            <th scope="row" style="color: black;" colspan="4">Total productos</th>
+            <td style="color: black;">10</td>
+            <td>
+                <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                    vaciar
+                </button>
+            </td>
+            <td class="font-weight-bold">$ <span>5000</span></td>
+        </template>
+
+        <!--este seria la las filas con el contenido que va a ir en la tabla-->
+        <template id="template-carrito">
+            <tr>
+                <th scope="row">ARTICULO</th>
+                <td>MARCA</td>
+                <td>HOJAS</td>
+                <td>TIPO</td>
+                <td>CANTIDAD</td>
+                <td>
+                    <!--ACCION-->
+                    <button class="btn btn-info btn-sm">+</button>
+                    <button class="btn btn-danger btn-sm">-</button>
+                </td>
+                <td>$ <span>500</span></td>
+            </tr>
+        </template>
+
+
+
+        <div class="container" id="container">
+
+            <!--CARRITO DE COMPRAS-->
+            <table class="table table-dark table-hover" id="tabla">
+                <thead>
+                    <tr>
+                        <th scope="col">ARTICULO</th>
+                        <th scope="col">MARCA</th>
+                        <th scope="col">HOJA</th>
+                        <th scope="col">TIPO</th>
+                        <th scope="col">CANTIDAD</th>
+                        <th scope="col">ACCION</th>
+                        <th scope="col">TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody id="items"></tbody>
+                <tfoot id="footer">
+                    <tr>
+                        <th scope="row" colspan="5">NO AGREGASTE NADA AL CARRITO</th>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <div class="row" id="card"></div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!--LAPICES/LAPICERAS-->
+        <div id="apartado1">
+            <h3>LAPICES Y LAPICERAS</h3>
+            <!--BOTON DEL CARRITO-->
+            <button id="pedido1" class="btn-primary btn-lg">CARRITO✏</button>
+        </div>
+
+        <template id="template-card1">
+            <div class="col-4 mb-2 col-md-4">
+                <div class="card" id="card1">
+                    <div class="card-body">
+                        <h4>MARCA</h4>
+                        <img src="" alt="" class="card-img-top">
+                        <p>COLOR:</p>
+                        <p id="color"></p>
+                        <h6>precio</h6>
+
+                        <button class="btn btn-dark">AGREGAR</button>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+
+        <!--este template es para la forma del footer de la tabla-->
+
+        <template id="template-footer1">
+            <th scope="row" style="color: black;" colspan="4">Total productos</th>
+            <td style="color: black;">10</td>
+            <td>
+                <button class="btn btn-danger btn-sm" id="vaciar-carrito1">
+                    vaciar
+                </button>
+            </td>
+            <td class="font-weight-bold">$ <span>5000</span></td>
+        </template>
+
+        <!--este seria la las filas con el contenido que va a ir en la tabla-->
+        <template id="template-carrito1">
+            <tr>
+                <th scope="row">ARTICULO</th>
+                <td>MARCA</td>
+                <td>COLOR</td>
+                <td>TRAZO</td>
+                <td>CANTIDAD</td>
+                <td>
+                    <!--ACCION-->
+                    <button class="btn btn-primary btn-sm">+</button>
+                    <button class="btn btn-warning btn-sm">-</button>
+                </td>
+                <td>$ <span>500</span></td>
+            </tr>
+        </template>
+
+
+
+        <div class="container" id="container1">
+
+            <!--CARRITO DE COMPRAS-->
+            <table class="table table-dark table-hover" id="tabla1">
+                <thead>
+                    <tr>
+                        <th scope="col">ARTICULO</th>
+                        <th scope="col">MARCA</th>
+                        <th scope="col">COLOR</th>
+                        <th scope="col">TRAZO</th>
+                        <th scope="col">CANTIDAD</th>
+                        <th scope="col">ACCION</th>
+                        <th scope="col">TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody id="items1"></tbody>
+                <tfoot id="footer1">
+                    <tr>
+                        <th scope="row" colspan="5">NO AGREGASTE NADA AL CARRITO</th>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <div class="row" id="card1"></div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <h3>¿Tenes algún problema con el producto o el envio? Escribinos</h3>
+        <!--voy a aplicar mi api en este secto-->
+
+        <div id="contacto">
+            <div id="nombre"></div>
+            <div id="mail"></div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="JS/jQuery.js"></script>
+    <script src="JS/objetos.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

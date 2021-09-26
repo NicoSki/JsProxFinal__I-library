@@ -1,0 +1,286 @@
+/*condiciones iniciales del la pag*/
+
+*{
+    padding: 0;
+    margin: 0;
+ }
+
+ body main{
+     background-color: rgb(197, 197, 206);
+ }
+    
+    
+    /*comienzo con el header*/
+    
+    header{
+        background-image: url(../imagenes/fondo.jpg);
+        height: 500px;
+        background-size: 100%;
+    }
+    
+    h5{
+        text-align: left;
+        margin-left:20px;
+        padding-top: 20px;
+    }
+    
+    h5 a{
+        text-decoration: none;
+        font-size: 40px;
+    }
+    
+     header h1{
+        text-align: center;
+        padding-top: 200px;
+        font-size: 90px;
+        font-family: 'Grey Qo', cursive;
+    }
+    
+    header h3{
+        text-align: right;
+        padding-top: 15px;
+        padding-right: 400px;
+        text-decoration: underline;
+        font-size: 50px;
+        font-family: 'Grey Qo', cursive;
+    }
+    
+    div#swtch{
+        font-size: 25px;
+        position: relative;
+        left: 90%;
+        top: -10%;
+    }
+
+
+    /*Articulos*/
+
+    h2{
+        text-align: center;
+        padding: 30px;
+    }
+
+    div.articulos{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+    
+    div.articulos span svg{
+        width: 100px;
+        height: 100px;
+        color: blue;
+    }
+    
+    div.articulos span{
+        padding: 50px;
+        border: 6px double blue;
+    }
+
+
+    div.articulos span:hover{
+        box-shadow: 3px 3px 3px black;
+        cursor: pointer;
+    }
+
+
+    
+    
+    /*navbar*/
+    
+    main nav ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin: 20px;
+    }
+    
+    main nav ul li a{
+        text-decoration: none;
+        list-style-type: none;
+        font-size: 27px;
+    }
+
+    
+    main nav ul li {
+        list-style-type: none;
+    }
+
+    main nav ul li:hover{
+        border: outset rgb(87, 87, 175);
+        border-style: none double dashed;
+    }
+
+
+
+
+/*============================
+         MAIN
+=============================*/
+
+h3{
+    font-family: 'Cinzel', serif;
+}
+
+div#apartado, #apartado1 {
+    padding: 40px;
+}
+
+h2{
+    font-family: 'Bangers', cursive;
+}
+
+/*============================
+         CARRITO
+=============================*/
+
+table#tabla, #tabla1{
+    display: none;
+    position: sticky;
+    z-index: 2;
+    top: 50px;
+} 
+
+
+/*=========================
+           CARTAS
+===========================*/
+
+div#card, div#card1{
+    text-align: center;
+}
+
+
+
+/*=========================
+           BOTONES
+===========================*/
+div#apartado, #apartado1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/*=========================
+           FOOTER
+===========================*/
+
+footer h3{
+    text-align: center;
+    padding: 20px;
+}
+
+#contacto{
+    display: flex;
+    justify-content: space-around;
+}
+
+#contacto #nombre ul li , #mail ul li{
+    list-style-type: none;
+}
+
+#contacto #nombre ul li:hover{
+    border-bottom: 1px solid black;
+}
+
+
+/*=========================
+           RESPONSIVE
+===========================*/
+
+/* En esta parte voy a ajustar el sitio en caso de que se vea de un 
+dispositivo movil*/
+
+
+
+@media only screen and (max-width: 625px){
+    /*HEADER*/
+
+    header {
+        background-image: url(../imagenes/fondo.jpg);
+        height: auto;
+        width: auto;
+        background-repeat: no-repeat;
+    }
+
+    h5 a{
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    header h1{
+        text-align: center;
+        padding-top: 80px;
+        font-size: 50px;
+        font-family: 'Grey Qo', cursive;
+    }
+    
+    header h3{
+        text-align: right;
+        padding-right: 180px;
+        text-decoration: underline;
+        font-size: 25px;
+        font-family: 'Grey Qo', cursive;
+    }
+
+
+    /*Articulos*/
+    
+    h2{
+        text-align: center;
+        padding: 30px;
+    }
+    
+    div.articulos{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    div.articulos span svg{
+        width: 50px;
+        height: 50px;
+        color: blue;
+    }
+    
+    div.articulos span{
+        padding: 30px;
+        border: 6px double blue;
+    }
+    
+    
+    div.articulos span:hover{
+        box-shadow: 3px 3px 3px black;
+        cursor: pointer;
+    }
+
+
+    /*navbar*/
+    
+    main nav ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin: 10px;
+    }
+    
+    main nav ul li a{
+        text-decoration: none;
+        list-style-type: none;
+        font-size: 20px;
+    }
+
+    
+    main nav ul li {
+        list-style-type: none;
+    }
+
+    main nav ul li:hover{
+        border: outset rgb(87, 87, 175);
+        border-style: none double dashed;
+    }
+    
+}
+
+
